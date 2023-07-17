@@ -1,69 +1,47 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+.app{
+  filter: contrast(350%) brightness(100%);
+  background: 
+	linear-gradient(
+    to bottom right, 
+    rgba(41,37,52,1), 
+    rgba(117,111,135,0.47)
+    ),
+    radial-gradient(
+      at var(--mouse-x) var(--mouse-y),
+      rgba(255,255,255,0.5), 
+      rgba(0,0,0,0.5)
+    ),
+	  url("data:image/svg+xml,%3Csvg viewBox='0 0 341 341' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='4.3' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  height: 100vh;
+  /*COLOCAR EN EL FONDO EL GRADIENTE*/
+  position: fixed; /* Agregado el estilo position: fixed */
+  top: 0; /* Asegura que el fondo ocupe toda la ventana */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto; /* Agregado el estilo overflow: auto; */
+  z-index: -1;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.custom-font {
+  font-family: 'Fira Code', monospace;
+  position: fixed;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  font-size: 10vw;
+  line-height: 1;
+  color: rgba(200,200,200,.1);
+  background: linear-gradient(rgba(200,200,200,0), rgba(200,200,200,0.07));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  font-weight: 900;
 }
