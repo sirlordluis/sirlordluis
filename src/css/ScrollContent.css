@@ -1,0 +1,17 @@
+p {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    margin-bottom: 0;
+    
+    font-size: 6vw;
+    line-height: 100%; /*Podria causar problemas*/
+    
+    /* Centrado vertical y horizontal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+    text-align: center;
+    font-weight: 600;
+  }

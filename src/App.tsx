@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import './css/App.css';
+import ScrollContent from './components/ScrollContent';
 
 function App() {
   const appRef = useRef<HTMLDivElement>(null);
@@ -48,7 +49,7 @@ function App() {
       </div>
       
       <h1 className='custom-font'>Welcome!</h1>
-      
+      <ScrollContent />
     </>
   );
 }
