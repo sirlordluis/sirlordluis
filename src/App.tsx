@@ -49,6 +49,7 @@ function App() {
       </div>
       
       <h1 className='custom-font'>Welcome!</h1>
+      <Navbar/>
       <ScrollContent />
     </>
   );
