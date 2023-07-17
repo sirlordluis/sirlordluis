@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import './css/App.css';
 
 function App() {
-  const appRef = useRef(null);
+  const appRef = useRef<HTMLDivElement>(null);
 /*COLOCAR EL GRADIENTE AL INICIO*/
   useEffect(() => {
     const setGradiantBackground = () => {
@@ -20,7 +20,7 @@ function App() {
 /*USAR GRADIENTE AL MOVER EL MOUSE*/
     setGradiantBackground();
 
-    const moveGradiant = (event) => {
+    const moveGradiant = (event:MouseEvent) => {
       const winWidth = window.innerWidth;
       const winHeight = window.innerHeight;
 
