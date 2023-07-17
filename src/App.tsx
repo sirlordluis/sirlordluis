@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import './styles/App.css';
+import './css/App.css';
 
 function App() {
   const appRef = useRef(null);
