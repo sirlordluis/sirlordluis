@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import './css/App.css';
 import ScrollContent from './components/ScrollContent';
+import Navbar from './components/Navbar';
 
 function App() {
   const appRef = useRef<HTMLDivElement>(null);
