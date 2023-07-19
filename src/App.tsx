@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import './css/App.css';
-import ScrollContent from './components/ScrollContent';
+import About from './components/About';
 import Navbar from './components/Navbar';
 
 function App() {
@@ -51,7 +51,7 @@ function App() {
       
       <h1 className='custom-font'>Welcome!</h1>
       <Navbar/>
-      <ScrollContent />
+      <About />
     </>
   );
 }
