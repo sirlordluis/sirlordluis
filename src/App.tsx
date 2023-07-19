@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import './css/App.css';
 import About from './components/About';
 import Navbar from './components/Navbar';
+import Projects from './components/Projects';
 
 function App() {
   const appRef = useRef<HTMLDivElement>(null);
@@ -52,6 +53,7 @@ function App() {
       <h1 className='custom-font'>Welcome!</h1>
       <Navbar/>
       <About />
+      <Projects/>
     </>
   );
 }
