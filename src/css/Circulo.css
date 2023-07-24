@@ -1,0 +1,8 @@
+
+.icon-container {
+    transition: color 0.5s ease; /* Ajusta la duración del desvanecimiento según prefieras */
+  }
+  
+  .icon-container:hover {
+    color: #C778DD; /* Cambia el color al que desees que se desvanezca el icono */
+  }

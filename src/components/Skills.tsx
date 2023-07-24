@@ -2,11 +2,11 @@ import Cuadrado from './Cuadrado';
 
 const Skills = () => {
     const skills= [
-        {title:"Languages",languges:["TypeScript","Lua", "Python", "JavaScript"]},
+        {title:"Languages",languges:["Java", "Python", "C++","Pascal", "C#"]},
         {title:"Databases",languges:["SQLite", "Oracle", "MySQL"]},
-        {title:"Tools",languges:["VSCode","Neovim", "Python", "JavaScript"]},
-        {title:"Other",languges:["TypeScript","Lua", "Python", "JavaScript"]},
-        {title:"Frameworks",languges:["TypeScript","Lua", "Python", "JavaScript"]},
+        {title:"Tools",languges:["VSCode","Neovim", "Qemu/KVM", "Git"]},
+        {title:"Soft Skills",languges:["Communication","Collaboration", "Adaptability", "Time Management", "Problem Solving", "Creativity"]},
+        {title:"Frameworks",languges:["React","Angular", "Laravel", "JavaScript"]},
     ]
     return(
         <>
@@ -25,27 +25,27 @@ const Skills = () => {
             {/*left */}
             <div className="mx-auto">
                 
-                <div className="flex flex-wrap gap-3 my-12 translate-x-[-5rem]">
-                    <div className="grid grid-cols-4 grid-rows-4 gap-x-3 gap-y-3 rotate-45 my-20 ">
+                <div className="flex flex-wrap gap-3 my-12 ">
+                    <div className="grid grid-cols-4 grid-rows-4 gap-x-3 gap-y-3 my-20 ">
                         {/*COLUMNA 1*/}
                         <Cuadrado texto="html5" />
-                        <Cuadrado texto="laravel" />
+                        <Cuadrado texto="laravel"/>
                         <Cuadrado texto="js" />
-                        <Cuadrado texto="github" />
+                        <Cuadrado texto="github"  />
                         {/*COLUMNA 2*/}
-                        <div />
+                        <div className="fa-solid fa-circle flex items-center justify-center"></div>
                         <Cuadrado texto="java" />
                         <Cuadrado texto="docker" />
                         <Cuadrado texto="python" />
                         {/*COLUMNA 3*/}
-                        <div />
-                        <div />
+                        <div className="fa-solid fa-circle flex items-center justify-center"></div>
+                        <div className="fa-solid fa-circle flex items-center justify-center"></div>
                         <Cuadrado texto="angular" />
                         <Cuadrado texto="php" />
                         {/*COLUMNA 4*/}
-                        <div />
-                        <div />
-                        <div />
+                        <div className="fa-solid fa-circle flex items-center justify-center"></div>
+                        <div className="fa-solid fa-circle flex items-center justify-center"></div>
+                        <div className="fa-solid fa-circle flex items-center justify-center"></div>
                         <Cuadrado texto="linux" />
                     </div>
                 </div>
