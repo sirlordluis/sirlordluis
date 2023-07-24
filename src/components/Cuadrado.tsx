@@ -1,4 +1,4 @@
-import '../styles/Circulo.css'
+import '../css/Circulo.css'
 
 const Cuadrado = ({ texto }: { texto: string }) => {
   const iconClass = `fa-${texto}`; // Concatenate 'fa-' with 'texto' to get the class name
